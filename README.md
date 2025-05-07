@@ -4,14 +4,11 @@ A lightweight, interactive React Native app built using Expo SDK 52 to display a
 
 ## 📸 Screenshots
 
-### 🏠 Home Screen
-![Home](./assets/preview3.png)
-
-### 📜 History Screen
-![History](./assets/preview2.png)
-
-### 🔍 Clear in History
-![Clear](./assets/preview1.png)
+<p align="center">
+  <img src="./assets/preview3.png" alt="Home" width="30%" />
+  <img src="./assets/preview2.png" alt="History" width="30%" />
+  <img src="./assets/preview1.png" alt="Clear" width="30%" />
+</p>
 
 ---
 
