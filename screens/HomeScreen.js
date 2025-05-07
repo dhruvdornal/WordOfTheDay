@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { View, Text, StyleSheet, Alert, ActivityIndicator, TouchableOpacity, Dimensions } from 'react-native';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { MaterialIcons } from '@expo/vector-icons';
-// Import these from their correct paths
 import { getRandomWord } from '../utils/WordService';
 import { saveWordToHistory } from '../storage/storage';
 import WordCard from '../components/WordCard';
@@ -29,7 +28,7 @@ const HomeScreen = () => {
       };
       await saveWordToHistory(wordWithDate);
       
-      // Add to history and set as current word
+      // add to history and set as current word
       setWordHistory(prev => [...prev, wordWithDate]);
       setCurrentWord(wordWithDate);
       setCurrentIndex(prev => prev + 1);
@@ -41,17 +40,17 @@ const HomeScreen = () => {
     }
   }, [loading]); // loading as dependency
 
-  // Initial fetch on component mount
+  // initial fetch on component mount
   useEffect(() => {
     if (wordHistory.length === 0) {
       fetchNewWord();
     }
   }, [fetchNewWord, wordHistory.length]); 
 
-  // Reload when screen comes into focus
+  // reload when screen comes into focus
   useFocusEffect(
     useCallback(() => {
-      // If there's no current word, fetch one
+      // if there's no current word just fetch one
       if (!currentWord && !loading) {
         fetchNewWord();
       }
@@ -71,7 +70,7 @@ const HomeScreen = () => {
     fetchNewWord();
   };
 
-  // this is for button press
+  // this is for button press for new word
   const handleNewWordButton = () => {
     if (wordCardRef.current) {
       wordCardRef.current.swipeRight();
@@ -134,7 +133,7 @@ const HomeScreen = () => {
     </View>
   );
 };
-
+// stylesheet (pretty understandable)
 const styles = StyleSheet.create({
   container: {
     flex: 1,
