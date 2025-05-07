@@ -1,9 +1,8 @@
-// WordService.js
 export const getRandomWord = () => {
   return new Promise((resolve) => {
-    // Simulate a small delay to make the app feel more realistic (optional)
+    // simulating a small delay to have some time loading word from the storage
     setTimeout(() => {
-      // You can expand this list for more variety
+      // kept a mixture of tech, science, gen-z slangs, environment words upto 20.
       const words = [
 {
   id: '1',
@@ -127,18 +126,18 @@ export const getRandomWord = () => {
 }
 ];
 
-      // Get a random index, but avoid returning the same word repeatedly
+      // getting a random index, avoid returning the same word repeatedly
       const index = Math.floor(Math.random() * words.length);
       
-      // Add a unique ID if not already present
+      // adding a unique ID if not already present
       const selectedWord = words[index];
       
       resolve(selectedWord);
-    }, 500); // Small delay for loading effect
+    }, 500); // small delay for loading effect
   });
 };
 
-// Optionally: Add a function to get a specific word by ID
+
 export const getWordById = (wordId) => {
   const words = [
     // Same word list as above
