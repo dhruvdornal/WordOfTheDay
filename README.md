@@ -1,11 +1,67 @@
-# Sample Snack app
+# 📘 Word of the Day App
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+A lightweight, interactive React Native app built using Expo SDK 52 to display a new English word every day—ranging from tech, science, Gen Z slang, to everyday vocabulary—along with its definition and an example. Includes navigation, search, and persistent history.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## 📸 Screenshots
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+### 🏠 Home Screen
+![Home](./assets/preview3.png)
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+### 📜 History Screen
+![History](./assets/preview2.png)
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+### 🔍 Clear in History
+![Clear](./assets/preview1.png)
+
+---
+
+## 🚀 Features
+
+- 🏠 **Home Screen**
+  - Shows the “Word of the Day” with definition and example.
+  - Button to fetch a new word.
+  - Swipe right to get the next word.
+  - Swipe left to view the previous word.
+  - Navigate to history screen.
+
+- 🕓 **History Screen**
+  - Displays previously viewed words with definitions and dates.
+  - Search bar to filter words.
+  - "Clear History" button to remove all past entries.
+
+- 💾 **Persistence**
+  - All words are stored using `AsyncStorage` to persist between sessions.
+
+- 🔀 **Navigation**
+  - Seamless transition between Home and History screens using `React Navigation`.
+
+---
+
+## 🧪 Testing Instructions
+
+### ✅ Option 1: Use Snack (Recommended)
+
+👉 [Click this link to Open in Snack](https://snack.expo.dev/@ozymozy1010/word-of-the-day)
+
+- You can run it directly in the browser, or switch to **Android**, **iOS**, or **My Device** using the toggle at the top.
+- ![Toggle Device Option](./assets/image.png)
+- ⚠️ Note: The **"Clear History"** button uses `Alert`, which may not work in the **web preview**. Please switch to **Android**, **iOS**, or **My Device** for full functionality.
+
+If testing on your own device:
+- Click on the **My Device** it will show a QR Code
+- Download **Expo Go (SDK 52)** from here:  
+  👉 [https://expo.dev/go](https://expo.dev/go)
+- Scan the Snack QR code to open the app.
+
+---
+
+### 🛠 Option 2: Run Locally via CLI
+
+> Ensure your Expo CLI version supports SDK 52.
+
+```bash
+git clone https://github.com/YOUR_USERNAME/word-of-the-day-app.git
+cd word-of-the-day-app
+npm install
+npx expo start
+
