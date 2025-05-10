@@ -36,7 +36,7 @@ A lightweight, interactive React Native app built using Expo SDK 52 to display a
 
 ## 🧪 Testing Instructions
 
-### ✅ Option 1: Use Snack (Recommended)
+### ✅ Option 1: Use Snack
 
 👉 [Click this link to Open in Snack](https://snack.expo.dev/@ozymozy1010/word-of-the-day)
 
@@ -57,7 +57,7 @@ If testing on your own device:
 > Ensure your Expo CLI version supports SDK 52.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/word-of-the-day-app.git
+git clone https://github.com/dhruvdornal/word-of-the-day-app.git
 cd word-of-the-day-app
 npm install
 npx expo start
