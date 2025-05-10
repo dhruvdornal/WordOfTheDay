@@ -57,8 +57,8 @@ If testing on your own device:
 > Ensure your Expo CLI version supports SDK 52.
 
 ```bash
-git clone https://github.com/dhruvdornal/word-of-the-day-app.git
-cd word-of-the-day-app
+git clone https://github.com/dhruvdornal/WordOfTheDay.git
+cd WordOfTheDay
 npm install
 npx expo start
 
